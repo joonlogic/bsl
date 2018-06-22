@@ -1,0 +1,4 @@
+#!/bin/sh
+
+bsl_diag64 -w $1 -v $2
+
