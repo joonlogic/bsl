@@ -8,7 +8,9 @@ bslext_module = Extension('bslext',
 						                   ('MINOR_VERSION', '0')],
 						  include_dirs = ['../', '../../module/'],
 						  libraries = ['bsl.sim', 'pcap', 'pthread'],
-						  sources = ['bslext.c'])
+						  library_dirs = ['/usr/lib'],
+						  sources = ['bslext.c'],
+						  extra_compile_args=["--std=c99"])
 
 setup(name='bslext',
       version='0.1.0',

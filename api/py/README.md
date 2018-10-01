@@ -4,13 +4,16 @@
 
     python3 setup.py build
 
-Output: `build/lib.macosx-10.11-x86_64-3.5/bslext.cpython-35m-darwin.so`
+Output: `build/lib.linux-x86_64-3.6/bslext.cpython-36m-x86_64-linux-gnu.so
 
 ## Run
 
-    $ cd build/lib.macosx-10.11-x86_64-3.5
+    $ cd build/lib.linux-x86_64-3.6
     $ python3
     >>> import bslext
-    >>> bslext.getNumberOfCards()
+    >>> card = 0
+	>>> port = 0
+	>>> bslext.getLinkStats(card, port)
 
 Tested on Ubuntu-16.04, Python *3.5.2*.
+Tested on CentOS-7, Python *3.6.3*.
